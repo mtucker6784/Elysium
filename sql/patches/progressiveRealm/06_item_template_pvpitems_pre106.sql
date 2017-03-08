@@ -1,0 +1,941 @@
+-- Note:
+-- The first queries are here to give sources.
+-- All the entries are replaced at the end of the file.
+-- Source: Patch 1.6: "Grand Marshal and High Warlord PvP Honor rewards have been updated with improved statistics and new unique art."
+
+-- Finished initial loading
+-- STATS CHANGED: Marshal's Silk Footwraps (ilevel 71 entry 16437). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=21, `stat_value2`=21, `stat_value3`=0, `armor`=69 WHERE entry=16437;
+-- SPELLS CHANGED: Marshal's Silk Footwraps (ilevel 71 entry 16437). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=388
+-- * Modified spell 1
+-- 1.12 spell 14248 (Increases damage and healing done by magical spells and effects by up to 21.)
+-- 1.04 spell 9342 (Increases damage and healing done by magical spells and effects by up to 13.)
+-- * Modified spell 2
+-- 1.12 spell 23727 (Improves your chance to hit with spells by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=9342, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16437;
+-- STATS CHANGED: Marshal's Silk Gloves (ilevel 71 entry 16440). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=0, `stat_value3`=0, `armor`=63 WHERE entry=16440;
+-- SPELLS CHANGED: Marshal's Silk Gloves (ilevel 71 entry 16440). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=16440
+-- * Modified spell 1
+-- 1.12 spell 14054 (Increases damage and healing done by magical spells and effects by up to 27.)
+-- 1.04 spell 22747 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- UPDATE item_template SET `spellid_1`=22747 WHERE entry=16440;
+-- STATS CHANGED: Field Marshal's Coronet (ilevel 74 entry 16441). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=24, `stat_value2`=24, `stat_value3`=19, `armor`=81 WHERE entry=16441;
+-- SPELLS CHANGED: Field Marshal's Coronet (ilevel 74 entry 16441). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=388
+-- * Modified spell 2
+-- 1.12 spell 18050 (Increases damage and healing done by magical spells and effects by up to 33.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16441;
+-- STATS CHANGED: Marshal's Silk Leggings (ilevel 71 entry 16442). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=23, `stat_value2`=19, `stat_value3`=16, `armor`=88 WHERE entry=16442;
+-- SPELLS CHANGED: Marshal's Silk Leggings (ilevel 71 entry 16442). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=388
+-- * Modified spell 1
+-- 1.12 spell 14798 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- 1.04 spell 14127 (Increases damage and healing done by magical spells and effects by up to 28.)
+-- * Modified spell 2
+-- 1.12 spell 18384 (Improves your chance to get a critical strike with spells by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=14127, `spellid_2`=0 WHERE entry=16442;
+-- STATS CHANGED: Field Marshal's Silk Vestments (ilevel 74 entry 16443). 1/3 versions
+-- UPDATE item_template SET `stat_value1`=30, `stat_value2`=25, `stat_value3`=0, `armor`=100 WHERE entry=16443;
+-- SPELLS CHANGED: Field Marshal's Silk Vestments (ilevel 74 entry 16443). 3 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev20.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=388
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev20.html
+-- * Modified spell 2
+-- 1.12 spell 18050 (Increases damage and healing done by magical spells and effects by up to 33.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16443;
+-- STATS CHANGED: Field Marshal's Silk Spaulders (ilevel 74 entry 16444). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=22, `stat_value2`=17, `stat_value3`=0, `armor`=75 WHERE entry=16444;
+-- SPELLS CHANGED: Field Marshal's Silk Spaulders (ilevel 74 entry 16444). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=388
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15715 (Increases damage and healing done by magical spells and effects by up to 25.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- * Modified spell 2
+-- 1.12 spell 25975 (Decreases the magical resistances of your spell targets by 10.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=25110, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16444;
+-- STATS CHANGED: Marshal's Leather Footguards (ilevel 71 entry 16446). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=16, `armor`=136 WHERE entry=16446;
+-- STATS CHANGED: Marshal's Dragonhide Gauntlets (ilevel 71 entry 16448). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=18, `stat_value2`=17, `armor`=123 WHERE entry=16448;
+-- SPELLS CHANGED: Marshal's Dragonhide Gauntlets (ilevel 71 entry 16448). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=397
+-- * Modified spell 2
+-- 1.12 spell 9417 (Increases damage and healing done by magical spells and effects by up to 12.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16448;
+-- STATS CHANGED: Field Marshal's Dragonhide Spaulders (ilevel 74 entry 16449). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=12, `stat_value2`=12, `stat_value3`=12, `armor`=148 WHERE entry=16449;
+-- STATS CHANGED: Marshal's Dragonhide Legguards (ilevel 71 entry 16450). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=16, `stat_value3`=15, `stat_value4`=13, `stat_value5`=15, `armor`=173 WHERE entry=16450;
+-- SPELLS CHANGED: Marshal's Dragonhide Legguards (ilevel 71 entry 16450). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=397
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 13669 (Increases your chance to dodge an attack by 1%.)
+-- * Modified spell 2
+-- 1.12 spell 0 ()
+-- 1.04 spell 9332 (+22 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=13669, `spellid_2`=9332, `spelltrigger_2`=1 WHERE entry=16450;
+-- STATS CHANGED: Field Marshal's Dragonhide Helmet (ilevel 74 entry 16451). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=16, `stat_value3`=15, `stat_value5`=13, `armor`=160 WHERE entry=16451;
+-- SPELLS CHANGED: Field Marshal's Dragonhide Helmet (ilevel 74 entry 16451). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=397
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 9346 (Increases damage and healing done by magical spells and effects by up to 18.)
+-- * Modified spell 2
+-- 1.12 spell 9346 (Increases damage and healing done by magical spells and effects by up to 18.)
+-- 1.04 spell 14027 (+24 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=9346, `spellid_2`=14027 WHERE entry=16451;
+-- STATS CHANGED: Field Marshal's Dragonhide Breastplate (ilevel 74 entry 16452). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=19, `stat_value2`=18, `armor`=197 WHERE entry=16452;
+-- SPELLS CHANGED: Field Marshal's Dragonhide Breastplate (ilevel 74 entry 16452). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=397
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev5.html
+-- * Modified spell 1
+-- 1.12 spell 14248 (Increases damage and healing done by magical spells and effects by up to 21.)
+-- 1.04 spell 14089 (+36 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=14089 WHERE entry=16452;
+-- STATS CHANGED: Field Marshal's Leather Chestpiece (ilevel 74 entry 16453). 1/1 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=20, `armor`=197 WHERE entry=16453;
+-- SPELLS CHANGED: Field Marshal's Leather Chestpiece (ilevel 74 entry 16453). 1 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname5.html
+-- * Modified spell 2
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16453;
+-- STATS CHANGED: Marshal's Leather Handgrips (ilevel 71 entry 16454). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=18, `stat_value2`=14, `armor`=123 WHERE entry=16454;
+-- SPELLS CHANGED: Marshal's Leather Handgrips (ilevel 71 entry 16454). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=16454
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 14049 (+40 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=14049 WHERE entry=16454;
+-- STATS CHANGED: Field Marshal's Leather Mask (ilevel 74 entry 16455). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=0, `armor`=160 WHERE entry=16455;
+-- SPELLS CHANGED: Field Marshal's Leather Mask (ilevel 74 entry 16455). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=394
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 13669 (Increases your chance to dodge an attack by 1%.)
+-- * Modified spell 3
+-- 1.12 spell 0 ()
+-- 1.04 spell 9336 (+30 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=13669, `spellid_3`=9336, `spelltrigger_3`=1 WHERE entry=16455;
+-- STATS CHANGED: Marshal's Leather Leggings (ilevel 71 entry 16456). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=0, `stat_value2`=24, `stat_type3`=4, `stat_value3`=12, `armor`=173 WHERE entry=16456;
+-- SPELLS CHANGED: Marshal's Leather Leggings (ilevel 71 entry 16456). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=16456
+-- * Modified spell 1
+-- 1.12 spell 15465 (Improves your chance to hit by 2%.)
+-- 1.04 spell 7598 (Improves your chance to get a critical strike by 2%.)
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 15464 (Improves your chance to hit by 1%.)
+-- UPDATE item_template SET `spellid_1`=7598, `spellid_2`=15464 WHERE entry=16456;
+-- STATS CHANGED: Field Marshal's Leather Epaulets (ilevel 74 entry 16457). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=15, `armor`=148 WHERE entry=16457;
+-- SPELLS CHANGED: Field Marshal's Leather Epaulets (ilevel 74 entry 16457). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 9332 (+22 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=9332 WHERE entry=16457;
+-- STATS CHANGED: Marshal's Dragonhide Boots (ilevel 71 entry 16459). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=15, `stat_value3`=11, `stat_value5`=10, `armor`=136 WHERE entry=16459;
+-- SPELLS CHANGED: Marshal's Dragonhide Boots (ilevel 71 entry 16459). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=397
+-- * Modified spell 1
+-- 1.12 spell 9345 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- UPDATE item_template SET `spellid_1`=25110 WHERE entry=16459;
+-- STATS CHANGED: Marshal's Chain Boots (ilevel 71 entry 16462). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=14, `stat_value3`=0, `armor`=286 WHERE entry=16462;
+-- SPELLS CHANGED: Marshal's Chain Boots (ilevel 71 entry 16462). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=395
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 13669 (Increases your chance to dodge an attack by 1%.)
+-- UPDATE item_template SET `spellid_1`=13669 WHERE entry=16462;
+-- STATS CHANGED: Marshal's Chain Grips (ilevel 71 entry 16463). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=18, `stat_value2`=17, `stat_value3`=16, `armor`=260 WHERE entry=16463;
+-- SPELLS CHANGED: Marshal's Chain Grips (ilevel 71 entry 16463). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=395
+-- * Modified spell 1
+-- 1.12 spell 28539 (Increases the damage done by your Multi-Shot by 4%.)
+-- 1.04 spell 23157 (Reduces the mana cost of your Arcane Shot by 15.)
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=23157, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16463;
+-- STATS CHANGED: Field Marshal's Chain Helm (ilevel 74 entry 16465). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=27, `stat_value2`=19, `stat_value3`=17, `stat_type4`=6, `stat_value4`=10, `armor`=338 WHERE entry=16465;
+-- SPELLS CHANGED: Field Marshal's Chain Helm (ilevel 74 entry 16465). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=395
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 9331 (+20 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=9331 WHERE entry=16465;
+-- STATS CHANGED: Field Marshal's Chain Breastplate (ilevel 74 entry 16466). 2/2 versions
+-- CONFLICT:
+-- 2005-05-20 00:28:35 to 2006-06-16 07:59:16 (days delta 399) on for example: http://wow.allakhazam.com/dyn/items/iname5.html
+-- 2005-05-16 00:18:17 to 2005-05-16 00:18:17 (days delta 0) on for example: http://wow.allakhazam.com/dyn/items/iname5.html
+-- UPDATE item_template SET `stat_value1`=1000, `stat_value2`=1000, `stat_value3`=0, `stat_type4`=6, `stat_value4`=1000, `armor`=1000, `fire_res`=1000, `nature_res`=1000, `frost_res`=1000, `shadow_res`=1000 WHERE entry=16466;
+-- SPELLS CHANGED: Field Marshal's Chain Breastplate (ilevel 74 entry 16466). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname5.html
+-- Source: http://wow.allakhazam.com/dyn/items/iname5.html
+-- * Modified spell 1
+-- 1.12 spell 0 ()
+-- 1.04 spell 14049 (+40 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=14049, `spelltrigger_1`=1 WHERE entry=16466;
+-- STATS CHANGED: Marshal's Chain Legguards (ilevel 71 entry 16467). 2/3 versions
+-- CONFLICT:
+-- 2006-02-07 01:46:08 to 2006-06-19 19:13:25 (days delta 136) on for example: http://wow.allakhazam.com/dyn/items/iname7.html
+-- 2005-07-06 05:22:49 to 2006-06-16 07:59:16 (days delta 351) on for example: http://wow.allakhazam.com/db/itemset.html?setid=395
+-- 2005-05-16 00:18:17 to 2005-05-16 00:18:17 (days delta 0) on for example: http://wow.allakhazam.com/dyn/items/iname5.html
+-- Warning: UNRESOLVED conflict
+-- UPDATE item_template SET `stat_value1`=1000, `stat_value2`=1000, `stat_value3`=0, `stat_type4`=6, `stat_value4`=1000, `armor`=1000, `fire_res`=1000, `nature_res`=1000, `frost_res`=1000, `shadow_res`=1000 WHERE entry=16467;
+-- SPELLS CHANGED: Marshal's Chain Legguards (ilevel 71 entry 16467). 3 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=395
+-- Source: http://wow.allakhazam.com/dyn/items/iname5.html
+-- * Modified spell 2
+-- 1.12 spell 0 ()
+-- 1.04 spell 13669 (Increases your chance to dodge an attack by 1%.)
+-- * Modified spell 3
+-- 1.12 spell 0 ()
+-- 1.04 spell 15464 (Improves your chance to hit by 1%.)
+-- UPDATE item_template SET `spellid_2`=13669, `spelltrigger_2`=1, `spellid_3`=15464, `spelltrigger_3`=1 WHERE entry=16467;
+-- STATS CHANGED: Field Marshal's Chain Spaulders (ilevel 74 entry 16468). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=15, `stat_value3`=0, `armor`=312 WHERE entry=16468;
+-- SPELLS CHANGED: Field Marshal's Chain Spaulders (ilevel 74 entry 16468). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=395
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 9332 (+22 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=9332 WHERE entry=16468;
+-- STATS CHANGED: Marshal's Lamellar Gloves (ilevel 71 entry 16471). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=20, `stat_value2`=16, `stat_value3`=0, `stat_type4`=3, `stat_value4`=13, `armor`=461 WHERE entry=16471;
+-- SPELLS CHANGED: Marshal's Lamellar Gloves (ilevel 71 entry 16471). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=402
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16471;
+-- STATS CHANGED: Marshal's Lamellar Boots (ilevel 71 entry 16472). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value3`=8, `stat_type4`=3, `stat_value4`=7, `armor`=507 WHERE entry=16472;
+-- SPELLS REMOVED: Marshal's Lamellar Boots (ilevel 71 entry 16472). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=402
+-- * Modified spell 1
+-- 1.12 spell 9346 (Increases damage and healing done by magical spells and effects by up to 18.)
+-- 1.04 spell 0 ()
+-- * Modified spell 2
+-- 1.12 spell 18379 (Restores 6 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16472;
+-- STATS CHANGED: Field Marshal's Lamellar Chestplate (ilevel 74 entry 16473). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=14, `stat_value3`=0, `stat_type4`=3, `stat_value4`=13, `armor`=738 WHERE entry=16473;
+-- SPELLS CHANGED: Field Marshal's Lamellar Chestplate (ilevel 74 entry 16473). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=402
+-- Source: http://wow.allakhazam.com/dyn/items/iname5.html
+-- * Modified spell 2
+-- 1.12 spell 15715 (Increases damage and healing done by magical spells and effects by up to 25.)
+-- 1.04 spell 0 ()
+-- * Modified spell 3
+-- 1.12 spell 21363 (Restores 5 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0, `spellid_3`=0, `spelltrigger_3`=0 WHERE entry=16473;
+-- STATS CHANGED: Field Marshal's Lamellar Faceguard (ilevel 74 entry 16474). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=19, `stat_value3`=0, `stat_type4`=3, `stat_value4`=11, `armor`=599 WHERE entry=16474;
+-- SPELLS REMOVED: Field Marshal's Lamellar Faceguard (ilevel 74 entry 16474). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=402
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- * Modified spell 2
+-- 1.12 spell 15715 (Increases damage and healing done by magical spells and effects by up to 25.)
+-- 1.04 spell 0 ()
+-- * Modified spell 3
+-- 1.12 spell 21363 (Restores 5 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0, `spellid_2`=0, `spelltrigger_2`=0, `spellid_3`=0, `spelltrigger_3`=0 WHERE entry=16474;
+-- STATS CHANGED: Marshal's Lamellar Legplates (ilevel 71 entry 16475). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=19, `stat_value2`=15, `stat_value3`=0, `armor`=646 WHERE entry=16475;
+-- SPELLS CHANGED: Marshal's Lamellar Legplates (ilevel 71 entry 16475). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=402
+-- * Modified spell 1
+-- 1.12 spell 14054 (Increases damage and healing done by magical spells and effects by up to 27.)
+-- 1.04 spell 15464 (Improves your chance to hit by 1%.)
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 7598 (Improves your chance to get a critical strike by 2%.)
+-- UPDATE item_template SET `spellid_1`=15464, `spellid_2`=7598 WHERE entry=16475;
+-- STATS CHANGED: Field Marshal's Lamellar Pauldrons (ilevel 74 entry 16476). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=18, `stat_value2`=17, `stat_value3`=10, `stat_type4`=6, `stat_value4`=10, `armor`=553 WHERE entry=16476;
+-- SPELLS REMOVED: Field Marshal's Lamellar Pauldrons (ilevel 74 entry 16476). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=402
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 14254 (Increases damage and healing done by magical spells and effects by up to 19.)
+-- 1.04 spell 0 ()
+-- * Modified spell 2
+-- 1.12 spell 18379 (Restores 6 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16476;
+-- STATS CHANGED: Field Marshal's Plate Armor (ilevel 74 entry 16477). 1/1 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=13, `stat_value3`=13, `armor`=738 WHERE entry=16477;
+-- STATS CHANGED: Field Marshal's Plate Helm (ilevel 74 entry 16478). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=19, `stat_type3`=3, `stat_value3`=15, `armor`=599 WHERE entry=16478;
+-- SPELLS REMOVED: Field Marshal's Plate Helm (ilevel 74 entry 16478). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=384
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=16478;
+-- STATS CHANGED: Marshal's Plate Legguards (ilevel 71 entry 16479). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=20, `stat_value2`=16, `armor`=646 WHERE entry=16479;
+-- STATS CHANGED: Field Marshal's Plate Shoulderguards (ilevel 74 entry 16480). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=15, `stat_value3`=11, `armor`=553 WHERE entry=16480;
+-- SPELLS REMOVED: Field Marshal's Plate Shoulderguards (ilevel 74 entry 16480). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=384
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=16480;
+-- STATS CHANGED: Marshal's Plate Boots (ilevel 71 entry 16483). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=15, `stat_value3`=11, `armor`=507 WHERE entry=16483;
+-- SPELLS REMOVED: Marshal's Plate Boots (ilevel 71 entry 16483). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=384
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=16483;
+-- STATS CHANGED: Marshal's Plate Gauntlets (ilevel 71 entry 16484). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=18, `stat_value2`=17, `stat_type3`=3, `stat_value3`=15, `armor`=461 WHERE entry=16484;
+-- SPELLS CHANGED: Marshal's Plate Gauntlets (ilevel 71 entry 16484). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=384
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16484;
+-- STATS CHANGED: Warlord's Silk Cowl (ilevel 74 entry 16533). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=24, `stat_value2`=24, `stat_value3`=19, `armor`=81 WHERE entry=16533;
+-- SPELLS CHANGED: Warlord's Silk Cowl (ilevel 74 entry 16533). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=16533
+-- * Modified spell 2
+-- 1.12 spell 18050 (Increases damage and healing done by magical spells and effects by up to 33.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16533;
+-- STATS CHANGED: General's Silk Trousers (ilevel 71 entry 16534). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=23, `stat_value2`=19, `stat_value3`=16, `armor`=88 WHERE entry=16534;
+-- SPELLS CHANGED: General's Silk Trousers (ilevel 71 entry 16534). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/item.html?witem=16534
+-- * Modified spell 1
+-- 1.12 spell 14798 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- 1.04 spell 14127 (Increases damage and healing done by magical spells and effects by up to 28.)
+-- * Modified spell 2
+-- 1.12 spell 18384 (Improves your chance to get a critical strike with spells by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=14127, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16534;
+-- STATS CHANGED: Warlord's Silk Raiment (ilevel 74 entry 16535). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=30, `stat_value2`=25, `stat_value3`=0, `armor`=100 WHERE entry=16535;
+-- SPELLS CHANGED: Warlord's Silk Raiment (ilevel 74 entry 16535). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev20.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=387
+-- * Modified spell 2
+-- 1.12 spell 18050 (Increases damage and healing done by magical spells and effects by up to 33.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16535;
+-- STATS CHANGED: Warlord's Silk Amice (ilevel 74 entry 16536). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=22, `stat_value2`=17, `stat_value3`=0, `armor`=75 WHERE entry=16536;
+-- SPELLS CHANGED: Warlord's Silk Amice (ilevel 74 entry 16536). 2 versions
+-- Source: http://wow.allakhazam.com/db/item.html?witem=16536
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15715 (Increases damage and healing done by magical spells and effects by up to 25.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- * Modified spell 2
+-- 1.12 spell 25975 (Decreases the magical resistances of your spell targets by 10.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=25110, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16536;
+-- STATS CHANGED: General's Silk Boots (ilevel 71 entry 16539). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=21, `stat_value2`=21, `stat_value3`=0, `armor`=69 WHERE entry=16539;
+-- SPELLS CHANGED: General's Silk Boots (ilevel 71 entry 16539). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=387
+-- * Modified spell 1
+-- 1.12 spell 14248 (Increases damage and healing done by magical spells and effects by up to 21.)
+-- 1.04 spell 9342 (Increases damage and healing done by magical spells and effects by up to 13.)
+-- * Modified spell 2
+-- 1.12 spell 23727 (Improves your chance to hit with spells by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=9342, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16539;
+-- STATS CHANGED: General's Silk Handguards (ilevel 71 entry 16540). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=0, `stat_value3`=0, `armor`=63 WHERE entry=16540;
+-- SPELLS CHANGED: General's Silk Handguards (ilevel 71 entry 16540). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/item.html?witem=16540
+-- * Modified spell 2
+-- 1.12 spell 14054 (Increases damage and healing done by magical spells and effects by up to 27.)
+-- 1.04 spell 22747 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- UPDATE item_template SET `spellid_2`=22747 WHERE entry=16540;
+-- STATS CHANGED: Warlord's Plate Armor (ilevel 74 entry 16541). 1/1 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=13, `stat_value3`=13, `armor`=738 WHERE entry=16541;
+-- STATS CHANGED: Warlord's Plate Headpiece (ilevel 74 entry 16542). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=19, `stat_type3`=3, `stat_value3`=15, `armor`=599 WHERE entry=16542;
+-- SPELLS REMOVED: Warlord's Plate Headpiece (ilevel 74 entry 16542). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=383
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=16542;
+-- STATS CHANGED: General's Plate Leggings (ilevel 71 entry 16543). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=20, `stat_value2`=16, `armor`=646 WHERE entry=16543;
+-- STATS CHANGED: Warlord's Plate Shoulders (ilevel 74 entry 16544). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=15, `stat_value3`=11, `armor`=553 WHERE entry=16544;
+-- SPELLS REMOVED: Warlord's Plate Shoulders (ilevel 74 entry 16544). 2 versions
+-- Source: http://wow.allakhazam.com/db/item.html?witem=16544
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=16544;
+-- STATS CHANGED: General's Plate Boots (ilevel 71 entry 16545). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=15, `stat_value3`=11, `armor`=507 WHERE entry=16545;
+-- SPELLS REMOVED: General's Plate Boots (ilevel 71 entry 16545). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=383
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=0, `spelltrigger_1`=0 WHERE entry=16545;
+-- STATS CHANGED: General's Plate Gauntlets (ilevel 71 entry 16548). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=18, `stat_value2`=17, `stat_type3`=3, `stat_value3`=15, `armor`=461 WHERE entry=16548;
+-- SPELLS CHANGED: General's Plate Gauntlets (ilevel 71 entry 16548). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=16548
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16548;
+-- STATS CHANGED: Warlord's Dragonhide Hauberk (ilevel 74 entry 16549). 1/1 versions
+-- UPDATE item_template SET `stat_value1`=19, `stat_value2`=18, `armor`=197 WHERE entry=16549;
+-- STATS CHANGED: Warlord's Dragonhide Helmet (ilevel 74 entry 16550). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=16, `stat_value3`=15, `stat_value5`=13, `armor`=160 WHERE entry=16550;
+-- SPELLS CHANGED: Warlord's Dragonhide Helmet (ilevel 74 entry 16550). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=398
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 14027 (+24 Attack Power.)
+-- UPDATE item_template SET `spellid_2`=14027 WHERE entry=16550;
+-- STATS CHANGED: Warlord's Dragonhide Epaulets (ilevel 74 entry 16551). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=12, `stat_value2`=12, `stat_value3`=12, `armor`=148 WHERE entry=16551;
+-- STATS CHANGED: General's Dragonhide Leggings (ilevel 71 entry 16552). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=16, `stat_value3`=15, `stat_value4`=15, `stat_value5`=13, `armor`=173 WHERE entry=16552;
+-- SPELLS CHANGED: General's Dragonhide Leggings (ilevel 71 entry 16552). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=398
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 13669 (Increases your chance to dodge an attack by 1%.)
+-- * Modified spell 2
+-- 1.12 spell 0 ()
+-- 1.04 spell 9332 (+22 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=13669, `spellid_2`=9332, `spelltrigger_2`=1 WHERE entry=16552;
+-- STATS CHANGED: General's Dragonhide Boots (ilevel 71 entry 16554). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=15, `stat_value3`=11, `stat_value4`=10, `armor`=136 WHERE entry=16554;
+-- SPELLS CHANGED: General's Dragonhide Boots (ilevel 71 entry 16554). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=16554
+-- * Modified spell 1
+-- 1.12 spell 9345 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- UPDATE item_template SET `spellid_1`=25110 WHERE entry=16554;
+-- STATS CHANGED: General's Dragonhide Gloves (ilevel 71 entry 16555). 1/3 versions
+-- UPDATE item_template SET `stat_value1`=18, `stat_value2`=17, `armor`=123 WHERE entry=16555;
+-- SPELLS CHANGED: General's Dragonhide Gloves (ilevel 71 entry 16555). 3 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=398
+-- Source: http://wow.allakhazam.com/db/item.html?witem=16555
+-- * Modified spell 2
+-- 1.12 spell 9417 (Increases damage and healing done by magical spells and effects by up to 12.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16555;
+-- STATS CHANGED: General's Leather Treads (ilevel 71 entry 16558). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=16, `armor`=136 WHERE entry=16558;
+-- STATS CHANGED: General's Leather Mitts (ilevel 71 entry 16560). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=18, `stat_value2`=14, `armor`=123 WHERE entry=16560;
+-- SPELLS CHANGED: General's Leather Mitts (ilevel 71 entry 16560). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=393
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 14049 (+40 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=14049 WHERE entry=16560;
+-- STATS CHANGED: Warlord's Leather Helm (ilevel 74 entry 16561). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=0, `armor`=160 WHERE entry=16561;
+-- SPELLS CHANGED: Warlord's Leather Helm (ilevel 74 entry 16561). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=393
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 9336 (+30 Attack Power.)
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 13669 (Increases your chance to dodge an attack by 1%.)
+-- * Modified spell 3
+-- 1.12 spell 0 ()
+-- 1.04 spell 15464 (Improves your chance to hit by 1%.)
+-- UPDATE item_template SET `spellid_1`=9336, `spellid_2`=13669, `spellid_3`=15464, `spelltrigger_3`=1 WHERE entry=16561;
+-- STATS CHANGED: Warlord's Leather Spaulders (ilevel 74 entry 16562). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=26, `stat_value2`=15, `armor`=148 WHERE entry=16562;
+-- SPELLS CHANGED: Warlord's Leather Spaulders (ilevel 74 entry 16562). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=393
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 9332 (+22 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=9332 WHERE entry=16562;
+-- STATS CHANGED: Warlord's Leather Breastplate (ilevel 74 entry 16563). 1/1 versions
+-- UPDATE item_template SET `stat_value1`=35, `stat_value2`=20, `armor`=197 WHERE entry=16563;
+-- SPELLS CHANGED: Warlord's Leather Breastplate (ilevel 74 entry 16563). 1 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname5.html
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=7597, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16563;
+-- STATS CHANGED: General's Leather Legguards (ilevel 71 entry 16564). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=24, `stat_value2`=0, `stat_type3`=4, `stat_value3`=12, `armor`=173 WHERE entry=16564;
+-- SPELLS CHANGED: General's Leather Legguards (ilevel 71 entry 16564). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=393
+-- * Modified spell 1
+-- 1.12 spell 15465 (Improves your chance to hit by 2%.)
+-- 1.04 spell 7598 (Improves your chance to get a critical strike by 2%.)
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 15464 (Improves your chance to hit by 1%.)
+-- UPDATE item_template SET `spellid_1`=7598, `spellid_2`=15464 WHERE entry=16564;
+-- STATS CHANGED: Warlord's Chain Chestpiece (ilevel 74 entry 16565). 1/1 versions
+-- UPDATE item_template SET `stat_value1`=23, `stat_value2`=24, `stat_value3`=0, `armor`=416 WHERE entry=16565;
+-- SPELLS CHANGED: Warlord's Chain Chestpiece (ilevel 74 entry 16565). 1 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=396
+-- * Modified spell 1
+-- 1.12 spell 0 ()
+-- 1.04 spell 14049 (+40 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=14049, `spelltrigger_1`=1 WHERE entry=16565;
+-- STATS CHANGED: Warlord's Chain Helmet (ilevel 74 entry 16566). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=19, `stat_value2`=27, `stat_value3`=17, `stat_type4`=6, `stat_value4`=10, `armor`=338 WHERE entry=16566;
+-- SPELLS CHANGED: Warlord's Chain Helmet (ilevel 74 entry 16566). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=396
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 9331 (+20 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=9331 WHERE entry=16566;
+-- STATS CHANGED: General's Chain Legguards (ilevel 71 entry 16567). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=23, `stat_value2`=22, `stat_value3`=0, `armor`=364 WHERE entry=16567;
+-- SPELLS CHANGED: General's Chain Legguards (ilevel 71 entry 16567). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=396
+-- * Modified spell 2
+-- 1.12 spell 0 ()
+-- 1.04 spell 13669 (Increases your chance to dodge an attack by 1%.)
+-- * Modified spell 3
+-- 1.12 spell 0 ()
+-- 1.04 spell 15464 (Improves your chance to hit by 1%.)
+-- UPDATE item_template SET `spellid_2`=13669, `spelltrigger_2`=1, `spellid_3`=15464, `spelltrigger_3`=1 WHERE entry=16567;
+-- STATS CHANGED: Warlord's Chain Shoulders (ilevel 74 entry 16568). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=15, `stat_value2`=26, `stat_value3`=0, `armor`=312 WHERE entry=16568;
+-- SPELLS CHANGED: Warlord's Chain Shoulders (ilevel 74 entry 16568). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=396
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 9332 (+22 Attack Power.)
+-- UPDATE item_template SET `spellid_1`=9332 WHERE entry=16568;
+-- STATS CHANGED: General's Chain Boots (ilevel 71 entry 16569). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=14, `stat_value2`=26, `stat_value3`=0, `armor`=286 WHERE entry=16569;
+-- SPELLS CHANGED: General's Chain Boots (ilevel 71 entry 16569). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=396
+-- * Modified spell 1
+-- 1.12 spell 15464 (Improves your chance to hit by 1%.)
+-- 1.04 spell 13669 (Increases your chance to dodge an attack by 1%.)
+-- UPDATE item_template SET `spellid_1`=13669 WHERE entry=16569;
+-- STATS CHANGED: General's Chain Gloves (ilevel 71 entry 16571). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=17, `stat_value2`=18, `stat_value3`=16, `armor`=260 WHERE entry=16571;
+-- SPELLS CHANGED: General's Chain Gloves (ilevel 71 entry 16571). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=396
+-- * Modified spell 1
+-- 1.12 spell 28539 (Increases the damage done by your Multi-Shot by 4%.)
+-- 1.04 spell 23157 (Reduces the mana cost of your Arcane Shot by 15.)
+-- * Modified spell 2
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=23157, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=16571;
+-- STATS CHANGED: General's Mail Boots (ilevel 71 entry 16573). 1/2 versions
+-- UPDATE item_template SET `armor`=286 WHERE entry=16573;
+-- SPELLS CHANGED: General's Mail Boots (ilevel 71 entry 16573). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=386
+-- * Modified spell 2
+-- 1.12 spell 14799 (Increases damage and healing done by magical spells and effects by up to 20.)
+-- 1.04 spell 14254 (Increases damage and healing done by magical spells and effects by up to 19.)
+-- * Modified spell 3
+-- 1.12 spell 21363 (Restores 5 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=14254, `spellid_3`=0, `spelltrigger_3`=0 WHERE entry=16573;
+-- STATS CHANGED: General's Mail Gauntlets (ilevel 71 entry 16574). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=17, `stat_value2`=15, `stat_value3`=11, `armor`=260 WHERE entry=16574;
+-- SPELLS CHANGED: General's Mail Gauntlets (ilevel 71 entry 16574). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=386
+-- * Modified spell 1
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 14248 (Increases damage and healing done by magical spells and effects by up to 21.)
+-- UPDATE item_template SET `spellid_1`=14248 WHERE entry=16574;
+-- STATS CHANGED: Warlord's Mail Armor (ilevel 74 entry 16577). 1/1 versions
+-- UPDATE item_template SET `stat_value3`=0, `armor`=416 WHERE entry=16577;
+-- SPELLS CHANGED: Warlord's Mail Armor (ilevel 74 entry 16577). 1 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev5.html
+-- * Modified spell 2
+-- 1.12 spell 18384 (Improves your chance to get a critical strike with spells by 1%.)
+-- 1.04 spell 0 ()
+-- * Modified spell 3
+-- 1.12 spell 9415 (Increases damage and healing done by magical spells and effects by up to 9.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0, `spellid_3`=0, `spelltrigger_3`=0 WHERE entry=16577;
+-- STATS CHANGED: Warlord's Mail Helm (ilevel 74 entry 16578). 1/2 versions
+-- UPDATE item_template SET `stat_value2`=11, `stat_value3`=10, `armor`=338 WHERE entry=16578;
+-- SPELLS CHANGED: Warlord's Mail Helm (ilevel 74 entry 16578). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=386
+-- * Modified spell 2
+-- 1.12 spell 18384 (Improves your chance to get a critical strike with spells by 1%.)
+-- 1.04 spell 0 ()
+-- * Modified spell 3
+-- 1.12 spell 9415 (Increases damage and healing done by magical spells and effects by up to 9.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_2`=0, `spelltrigger_2`=0, `spellid_3`=0, `spelltrigger_3`=0 WHERE entry=16578;
+-- STATS CHANGED: General's Mail Leggings (ilevel 71 entry 16579). 1/2 versions
+-- UPDATE item_template SET `stat_value2`=19, `stat_type3`=3, `stat_value3`=15, `armor`=364 WHERE entry=16579;
+-- SPELLS CHANGED: General's Mail Leggings (ilevel 71 entry 16579). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=386
+-- * Modified spell 1
+-- 1.12 spell 14054 (Increases damage and healing done by magical spells and effects by up to 27.)
+-- 1.04 spell 14127 (Increases damage and healing done by magical spells and effects by up to 28.)
+-- * Modified spell 2
+-- 1.12 spell 18384 (Improves your chance to get a critical strike with spells by 1%.)
+-- 1.04 spell 0 ()
+-- * Modified spell 3
+-- 1.12 spell 7597 (Improves your chance to get a critical strike by 1%.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=14127, `spellid_2`=0, `spelltrigger_2`=0, `spellid_3`=0, `spelltrigger_3`=0 WHERE entry=16579;
+-- STATS CHANGED: Warlord's Mail Spaulders (ilevel 74 entry 16580). 1/2 versions
+-- UPDATE item_template SET `stat_value2`=17, `stat_value3`=11, `stat_value4`=8, `armor`=312 WHERE entry=16580;
+-- SPELLS CHANGED: Warlord's Mail Spaulders (ilevel 74 entry 16580). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=386
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 9345 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- 1.04 spell 25109 (Increases damage and healing done by magical spells and effects by up to 8.)
+-- UPDATE item_template SET `spellid_1`=25109 WHERE entry=16580;
+-- STATS CHANGED: Field Marshal's Coronal (ilevel 74 entry 17578). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=28, `armor`=81 WHERE entry=17578;
+-- SPELLS CHANGED: Field Marshal's Coronal (ilevel 74 entry 17578). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=17578
+-- * Modified spell 1
+-- 1.12 spell 17367 (Increases damage and healing done by magical spells and effects by up to 32.)
+-- 1.04 spell 14799 (Increases damage and healing done by magical spells and effects by up to 20.)
+-- UPDATE item_template SET `spellid_1`=14799 WHERE entry=17578;
+-- STATS CHANGED: Marshal's Dreadweave Leggings (ilevel 71 entry 17579). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=23, `stat_value2`=16, `armor`=88 WHERE entry=17579;
+-- SPELLS CHANGED: Marshal's Dreadweave Leggings (ilevel 71 entry 17579). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=392
+-- * Modified spell 1
+-- 1.12 spell 18054 (Increases damage and healing done by magical spells and effects by up to 37.)
+-- 1.04 spell 14055 (Increases damage and healing done by magical spells and effects by up to 35.)
+-- UPDATE item_template SET `spellid_1`=14055 WHERE entry=17579;
+-- STATS CHANGED: Field Marshal's Dreadweave Shoulders (ilevel 74 entry 17580). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=22, `armor`=75 WHERE entry=17580;
+-- SPELLS CHANGED: Field Marshal's Dreadweave Shoulders (ilevel 74 entry 17580). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15715 (Increases damage and healing done by magical spells and effects by up to 25.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- UPDATE item_template SET `spellid_1`=25110 WHERE entry=17580;
+-- STATS CHANGED: Field Marshal's Dreadweave Robe (ilevel 74 entry 17581). 1/3 versions
+-- UPDATE item_template SET `stat_value2`=25, `armor`=100 WHERE entry=17581;
+-- SPELLS CHANGED: Field Marshal's Dreadweave Robe (ilevel 74 entry 17581). 3 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=392
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev20.html
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev20.html
+-- * Modified spell 1
+-- 1.12 spell 17367 (Increases damage and healing done by magical spells and effects by up to 32.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- UPDATE item_template SET `spellid_1`=25110 WHERE entry=17581;
+-- STATS CHANGED: Marshal's Dreadweave Boots (ilevel 71 entry 17583). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=21, `stat_value2`=21, `armor`=69 WHERE entry=17583;
+-- SPELLS CHANGED: Marshal's Dreadweave Boots (ilevel 71 entry 17583). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=392
+-- * Modified spell 1
+-- 1.12 spell 18049 (Increases damage and healing done by magical spells and effects by up to 26.)
+-- 1.04 spell 9342 (Increases damage and healing done by magical spells and effects by up to 13.)
+-- UPDATE item_template SET `spellid_1`=9342 WHERE entry=17583;
+-- STATS CHANGED: Marshal's Dreadweave Gloves (ilevel 71 entry 17584). 1/3 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=0, `armor`=63 WHERE entry=17584;
+-- SPELLS CHANGED: Marshal's Dreadweave Gloves (ilevel 71 entry 17584). 3 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=17584
+-- Source: http://wow.allakhazam.com/db/item.html?witem=17584
+-- * Modified spell 2
+-- 1.12 spell 14798 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- 1.04 spell 22747 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- UPDATE item_template SET `spellid_2`=22747 WHERE entry=17584;
+-- STATS CHANGED: General's Dreadweave Boots (ilevel 71 entry 17586). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=21, `stat_value2`=21, `armor`=69 WHERE entry=17586;
+-- SPELLS CHANGED: General's Dreadweave Boots (ilevel 71 entry 17586). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=391
+-- * Modified spell 1
+-- 1.12 spell 18049 (Increases damage and healing done by magical spells and effects by up to 26.)
+-- 1.04 spell 9342 (Increases damage and healing done by magical spells and effects by up to 13.)
+-- UPDATE item_template SET `spellid_1`=9342 WHERE entry=17586;
+-- STATS CHANGED: General's Dreadweave Gloves (ilevel 71 entry 17588). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=0, `armor`=63 WHERE entry=17588;
+-- SPELLS CHANGED: General's Dreadweave Gloves (ilevel 71 entry 17588). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=391
+-- * Modified spell 2
+-- 1.12 spell 14798 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- 1.04 spell 22747 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- UPDATE item_template SET `spellid_2`=22747 WHERE entry=17588;
+-- STATS CHANGED: Warlord's Dreadweave Mantle (ilevel 74 entry 17590). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=22, `armor`=75 WHERE entry=17590;
+-- SPELLS CHANGED: Warlord's Dreadweave Mantle (ilevel 74 entry 17590). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=391
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15715 (Increases damage and healing done by magical spells and effects by up to 25.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- UPDATE item_template SET `spellid_1`=25110 WHERE entry=17590;
+-- STATS CHANGED: Warlord's Dreadweave Hood (ilevel 74 entry 17591). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=28, `armor`=81 WHERE entry=17591;
+-- SPELLS CHANGED: Warlord's Dreadweave Hood (ilevel 74 entry 17591). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=391
+-- * Modified spell 1
+-- 1.12 spell 17367 (Increases damage and healing done by magical spells and effects by up to 32.)
+-- 1.04 spell 14799 (Increases damage and healing done by magical spells and effects by up to 20.)
+-- UPDATE item_template SET `spellid_1`=14799 WHERE entry=17591;
+-- STATS CHANGED: Warlord's Dreadweave Robe (ilevel 74 entry 17592). 1/2 versions
+-- UPDATE item_template SET `stat_value2`=25, `armor`=100 WHERE entry=17592;
+-- SPELLS CHANGED: Warlord's Dreadweave Robe (ilevel 74 entry 17592). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=391
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev20.html
+-- * Modified spell 1
+-- 1.12 spell 17367 (Increases damage and healing done by magical spells and effects by up to 32.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- UPDATE item_template SET `spellid_1`=25110 WHERE entry=17592;
+-- STATS CHANGED: General's Dreadweave Pants (ilevel 71 entry 17593). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=23, `stat_value2`=16, `armor`=88 WHERE entry=17593;
+-- SPELLS CHANGED: General's Dreadweave Pants (ilevel 71 entry 17593). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=391
+-- * Modified spell 1
+-- 1.12 spell 18054 (Increases damage and healing done by magical spells and effects by up to 37.)
+-- 1.04 spell 14055 (Increases damage and healing done by magical spells and effects by up to 35.)
+-- UPDATE item_template SET `spellid_1`=14055 WHERE entry=17593;
+-- STATS CHANGED: Field Marshal's Headdress (ilevel 74 entry 17602). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=28, `stat_value2`=24, `armor`=81 WHERE entry=17602;
+-- SPELLS CHANGED: Field Marshal's Headdress (ilevel 74 entry 17602). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=389
+-- * Modified spell 1
+-- 1.12 spell 18050 (Increases damage and healing done by magical spells and effects by up to 33.)
+-- 1.04 spell 14799 (Increases damage and healing done by magical spells and effects by up to 20.)
+-- * Modified spell 2
+-- 1.12 spell 21362 (Restores 4 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=14799, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=17602;
+-- STATS CHANGED: Marshal's Satin Pants (ilevel 71 entry 17603). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=23, `stat_value2`=16, `stat_type3`=6, `stat_value3`=19, `armor`=88 WHERE entry=17603;
+-- SPELLS CHANGED: Marshal's Satin Pants (ilevel 71 entry 17603). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=389
+-- * Modified spell 1
+-- 1.12 spell 17367 (Increases damage and healing done by magical spells and effects by up to 32.)
+-- 1.04 spell 14127 (Increases damage and healing done by magical spells and effects by up to 28.)
+-- * Modified spell 2
+-- 1.12 spell 21362 (Restores 4 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=14127, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=17603;
+-- STATS CHANGED: Field Marshal's Satin Mantle (ilevel 74 entry 17604). 1/2 versions
+-- UPDATE item_template SET `stat_value2`=17, `armor`=75 WHERE entry=17604;
+-- SPELLS CHANGED: Field Marshal's Satin Mantle (ilevel 74 entry 17604). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=389
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15715 (Increases damage and healing done by magical spells and effects by up to 25.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- UPDATE item_template SET `spellid_1`=25110 WHERE entry=17604;
+-- STATS CHANGED: Field Marshal's Satin Vestments (ilevel 74 entry 17605). 1/2 versions
+-- UPDATE item_template SET `stat_value2`=25, `armor`=100 WHERE entry=17605;
+-- SPELLS CHANGED: Field Marshal's Satin Vestments (ilevel 74 entry 17605). 2 versions
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=389
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev20.html
+-- * Modified spell 1
+-- 1.12 spell 18050 (Increases damage and healing done by magical spells and effects by up to 33.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- * Modified spell 2
+-- 1.12 spell 21362 (Restores 4 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=25110, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=17605;
+-- STATS CHANGED: Marshal's Satin Sandals (ilevel 71 entry 17607). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=21, `armor`=69 WHERE entry=17607;
+-- SPELLS CHANGED: Marshal's Satin Sandals (ilevel 71 entry 17607). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=17607
+-- * Modified spell 1
+-- 1.12 spell 14047 (Increases damage and healing done by magical spells and effects by up to 23.)
+-- 1.04 spell 9342 (Increases damage and healing done by magical spells and effects by up to 13.)
+-- UPDATE item_template SET `spellid_1`=9342 WHERE entry=17607;
+-- STATS CHANGED: Marshal's Satin Gloves (ilevel 71 entry 17608). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=0, `armor`=63 WHERE entry=17608;
+-- SPELLS CHANGED: Marshal's Satin Gloves (ilevel 71 entry 17608). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=389
+-- * Modified spell 1
+-- 1.12 spell 14047 (Increases damage and healing done by magical spells and effects by up to 23.)
+-- 1.04 spell 22747 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- UPDATE item_template SET `spellid_1`=22747 WHERE entry=17608;
+-- STATS CHANGED: General's Satin Boots (ilevel 71 entry 17618). 1/2 versions
+-- UPDATE item_template SET `stat_value2`=21, `armor`=69 WHERE entry=17618;
+-- SPELLS CHANGED: General's Satin Boots (ilevel 71 entry 17618). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname8.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=390
+-- * Modified spell 1
+-- 1.12 spell 14047 (Increases damage and healing done by magical spells and effects by up to 23.)
+-- 1.04 spell 9342 (Increases damage and healing done by magical spells and effects by up to 13.)
+-- UPDATE item_template SET `spellid_1`=9342 WHERE entry=17618;
+-- STATS CHANGED: General's Satin Gloves (ilevel 71 entry 17620). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=16, `stat_value2`=0, `armor`=63 WHERE entry=17620;
+-- SPELLS CHANGED: General's Satin Gloves (ilevel 71 entry 17620). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname10.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=390
+-- * Modified spell 2
+-- 1.12 spell 14047 (Increases damage and healing done by magical spells and effects by up to 23.)
+-- 1.04 spell 22747 (Increases damage and healing done by magical spells and effects by up to 30.)
+-- UPDATE item_template SET `spellid_2`=22747 WHERE entry=17620;
+-- STATS CHANGED: Warlord's Satin Mantle (ilevel 74 entry 17622). 1/2 versions
+-- UPDATE item_template SET `stat_value2`=17, `armor`=75 WHERE entry=17622;
+-- SPELLS CHANGED: Warlord's Satin Mantle (ilevel 74 entry 17622). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- Source: http://wow.allakhazam.com/dyn/items/iname3.html
+-- * Modified spell 1
+-- 1.12 spell 15715 (Increases damage and healing done by magical spells and effects by up to 25.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- UPDATE item_template SET `spellid_1`=25110 WHERE entry=17622;
+-- STATS CHANGED: Warlord's Satin Cowl (ilevel 74 entry 17623). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=28, `stat_value2`=24, `armor`=81 WHERE entry=17623;
+-- SPELLS CHANGED: Warlord's Satin Cowl (ilevel 74 entry 17623). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname1.html
+-- Source: http://wow.allakhazam.com/db/item.html?witem=17623
+-- * Modified spell 1
+-- 1.12 spell 18050 (Increases damage and healing done by magical spells and effects by up to 33.)
+-- 1.04 spell 14799 (Increases damage and healing done by magical spells and effects by up to 20.)
+-- * Modified spell 2
+-- 1.12 spell 21362 (Restores 4 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=14799, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=17623;
+-- STATS CHANGED: Warlord's Satin Robes (ilevel 74 entry 17624). 1/2 versions
+-- UPDATE item_template SET `stat_value2`=25, `armor`=100 WHERE entry=17624;
+-- SPELLS CHANGED: Warlord's Satin Robes (ilevel 74 entry 17624). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname20.html
+-- Source: http://wow.allakhazam.com/dyn/items/iminlev20.html
+-- * Modified spell 1
+-- 1.12 spell 18050 (Increases damage and healing done by magical spells and effects by up to 33.)
+-- 1.04 spell 25110 (Increases damage and healing done by magical spells and effects by up to 16.)
+-- * Modified spell 2
+-- 1.12 spell 21362 (Restores 4 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=25110, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=17624;
+-- STATS CHANGED: General's Satin Leggings (ilevel 71 entry 17625). 1/2 versions
+-- UPDATE item_template SET `stat_value1`=23, `stat_value2`=16, `stat_type3`=6, `stat_value3`=19, `armor`=88 WHERE entry=17625;
+-- SPELLS CHANGED: General's Satin Leggings (ilevel 71 entry 17625). 2 versions
+-- Source: http://wow.allakhazam.com/dyn/items/iname7.html
+-- Source: http://wow.allakhazam.com/db/itemset.html?setid=390
+-- * Modified spell 1
+-- 1.12 spell 17367 (Increases damage and healing done by magical spells and effects by up to 32.)
+-- 1.04 spell 14127 (Increases damage and healing done by magical spells and effects by up to 28.)
+-- * Modified spell 2
+-- 1.12 spell 21362 (Restores 4 mana per 5 sec.)
+-- 1.04 spell 0 ()
+-- UPDATE item_template SET `spellid_1`=14127, `spellid_2`=0, `spelltrigger_2`=0 WHERE entry=17625;
+-- Total items       : 96
+-- Stats changed     : 96 (2 conflicts, 1 unresolved)
+-- Damage changed    : 0 (0 items with damage data)
+-- Quality changed   : 0
+-- Spells changed    : 165 (0 need manual validation)
+-- Spells removed    : 9
+-- Not found         : 0
+
+-- Here is the data dump from Nostalrius Begins live database (2015-07-08)
+REPLACE INTO `item_template` VALUES (18877,2,8,'High Warlord\'s Greatsword',31998,4,32768,1,301699,60339,17,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,36,4,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,196,295,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3800,0,0,7597,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,1,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(18873,2,10,'Grand Marshal\'s Stave',31764,4,32768,1,297299,59459,17,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,36,5,20,6,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,125,203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,17493,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,2,2,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(18871,2,6,'High Warlord\'s Pig Sticker',31766,4,32768,1,295085,59017,17,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,36,4,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,196,295,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3800,0,0,7597,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,2,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(18869,2,6,'Grand Marshal\'s Glaive',31761,4,32768,1,284969,56993,17,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,36,4,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,196,295,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3800,0,0,7597,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,2,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(18868,2,5,'High Warlord\'s Pulverizer',31750,4,32768,1,313819,62763,17,-1,-1,78,60,0,0,199,18,0,0,0,0,1,0,7,36,4,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,196,295,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3800,0,0,7597,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,2,1,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(18866,2,4,'High Warlord\'s Bludgeon',31751,4,32768,1,249308,49861,13,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,2,3,0,0,0,105,0,0,0,'',0,0,0,0,0,0,1),(18860,2,3,'High Warlord\'s Street Sweeper',31747,4,32768,1,183012,36602,26,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,3,100,21436,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,-1,1,'',0,0,0,0,0,1,0,0,0,0,90,0,0,0,'',0,0,0,0,0,0,1),(18833,2,2,'Grand Marshal\'s Bullseye',31759,4,32768,1,173657,34731,15,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1800,2,100,21436,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,-1,1,'',0,0,0,0,0,2,0,0,0,0,90,0,0,0,'',0,0,0,0,0,0,1),(18855,2,3,'Grand Marshal\'s Hand Cannon',31758,4,32768,1,179726,35945,26,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,3,100,21436,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,-1,1,'',0,0,0,0,0,1,0,0,0,0,90,0,0,0,'',0,0,0,0,0,0,1),(18847,2,13,'Grand Marshal\'s Left Hand Blade',32032,4,32768,1,250218,50043,22,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,7,0,0,0,75,0,0,0,'',0,0,0,0,0,0,1),(18840,2,15,'High Warlord\'s Razor',31381,4,32768,1,244064,48812,13,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2000,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,3,0,0,0,75,0,0,0,'',0,0,0,0,0,0,1),(18838,2,15,'Grand Marshal\'s Dirk',31379,4,32768,1,242293,48458,13,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,79,120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2000,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,3,0,0,0,75,0,0,0,'',0,0,0,0,0,0,1),(18837,2,18,'High Warlord\'s Crossbow',31749,4,32768,1,176297,35259,26,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,2,100,21436,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,-1,1,'',0,0,0,0,0,2,0,0,0,0,90,0,0,0,'',0,0,0,0,0,0,1),(18836,2,18,'Grand Marshal\'s Repeater',31757,4,32768,1,175650,35130,26,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,90,135,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,2,100,21436,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,-1,1,'',0,0,0,0,0,2,0,0,0,0,90,0,0,0,'',0,0,0,0,0,0,1),(18835,2,2,'High Warlord\'s Recurve',31748,4,32768,1,174986,34997,15,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,55,84,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1800,2,100,21436,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,-1,1,'',0,0,0,0,0,2,0,0,0,0,90,0,0,0,'',0,0,0,0,0,0,1),(18848,2,13,'High Warlord\'s Left Claw',31752,4,32768,1,251079,50215,22,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,7,0,0,0,75,0,0,0,'',0,0,0,0,0,0,1),(18831,2,1,'High Warlord\'s Battle Axe',31958,4,32768,1,287244,57448,17,-1,-1,78,60,0,0,197,18,0,0,0,0,1,0,7,36,4,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,196,295,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3800,0,0,7597,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,1,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(18830,2,1,'Grand Marshal\'s Sunderer',31302,4,32768,1,286137,57227,17,-1,-1,78,60,0,0,197,18,0,0,0,0,1,0,7,36,4,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,196,295,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3800,0,0,7597,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,1,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(18828,2,0,'High Warlord\'s Cleaver',31957,4,32768,1,251127,50225,13,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,3,0,0,0,105,0,0,0,'',0,0,0,0,0,0,1),(16345,2,7,'High Warlord\'s Blade',31997,4,32768,1,247416,49483,13,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,3,0,0,0,105,0,0,0,'',0,0,0,0,0,0,1),(18827,2,0,'Grand Marshal\'s Handaxe',31956,4,32768,1,250241,50048,13,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,3,0,0,0,105,0,0,0,'',0,0,0,0,0,0,1),(18843,2,13,'Grand Marshal\'s Right Hand Blade',32033,4,32768,1,246698,49339,21,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,7,0,0,0,75,0,0,0,'',0,0,0,0,0,0,1),(18865,2,4,'Grand Marshal\'s Punisher',31955,4,32768,1,248422,49684,13,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,2,3,0,0,0,105,0,0,0,'',0,0,0,0,0,0,1),(18867,2,5,'Grand Marshal\'s Battle Hammer',31954,4,32768,1,312712,62542,17,-1,-1,78,60,0,0,199,18,0,0,0,0,1,0,7,36,4,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,196,295,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3800,0,0,7597,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,2,1,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(18876,2,8,'Grand Marshal\'s Claymore',31996,4,32768,1,300592,60118,17,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,36,4,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,196,295,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3800,0,0,7597,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,1,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(18874,2,10,'High Warlord\'s War Staff',31765,4,32768,1,298407,59681,17,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,36,5,20,6,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,125,203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3000,0,0,17493,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,2,2,0,0,0,120,0,0,0,'',0,0,0,0,0,0,1),(12584,2,7,'Grand Marshal\'s Longsword',31966,4,32768,1,248182,49636,13,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,3,0,0,0,105,0,0,0,'',0,0,0,0,0,0,1),(18844,2,13,'High Warlord\'s Right Claw',31754,4,32768,1,247584,49516,21,-1,-1,78,60,0,0,0,18,0,0,0,0,1,0,7,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,115,173,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2900,0,0,7597,1,0,0,-1,0,-1,9141,1,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,-1,0,-1,0,0,0,0,0,0,0,1,'',0,0,0,0,0,1,7,0,0,0,75,0,0,0,'',0,0,0,0,0,0,1);
+
+-- 1.8 data to pre 1.6 Patch
+delete from item_template where entry in (19542,19526,19522,19518,19510,19534,19566,19550,19558,19514,19538,19570,19554,19546,19562,19582,19578,20043,20047,20046,20045,20042,20041,20054,20053,20052,20050,20049,20048,20071,20150,20163,20171,20190,20195,20204,20159,20167,20186,20154,20199,20208,20072,20176,20175,20194,20158,20203,20212,20061,20060,20059,20055,20058,20057,19426,19491,19303,19302,19288,19287,19289,19290,20424);
+replace into item_template select * from item_template_112 where entry in (19143,18808,19090,19089,19088,19087,19093,19092,19091,19308);
+
+-- Disable loot for darkmoon faire cards (should remove items, but players already looted / sold them ...) 
+update creature_loot_template set ChanceOrQuestChance=0 where item in (19227,19228,19230,19231,19232,19233,19234,19235,19236,19267,19268,19269,19270,19271,19272,19273,19274,19275,19276,19277,19278,19279,19280,19281,19282,19283,19284,19257,19258,19259,19260,19261,19262,19263,19264,19265,19287,19288,19289,19290);
