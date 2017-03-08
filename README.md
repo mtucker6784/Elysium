@@ -1,4 +1,4 @@
-# Elysium Private Server - Anathema (old core) & Elysium (Nost core - their current)
+# Elysium Private Server - Nost core
 These branches are from the "NostReturns" leak (which is now removed.) The last actual timestamp as of the leak is Feb 15 2017, so this source is current as of that date (or near it.)
 
 These cores are based off of MaNGOS/CMaNGOS, so I copied the license that they are licensed under (GNU 2+)
